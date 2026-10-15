@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const email = "info@jor-design.nl";
-const subject = encodeURIComponent("Bod op Retrogear.net");
-const body = encodeURIComponent("Hoi JOR-Design,\n\nIk wil graag een bod uitbrengen op Retrogear.net.\n\nMijn bod: €\n\nNaam:\n\nGroet,");
+const subject = encodeURIComponent("Offer for Retrogear.net");
+const body = encodeURIComponent("Hi JOR-Design,\n\nI'd like to make an offer for Retrogear.net.\n\nMy offer: €\n\nName:\n\nBest regards,");
 const offerLink = `mailto:${email}?subject=${subject}&body=${body}`;
 
 function ArrowIcon({ diagonal = false }: { diagonal?: boolean }) {
@@ -49,12 +49,12 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-header wrap">
-        <a className="brand" href="#top" aria-label="Retrogear.net, naar boven">
+        <a className="brand" href="#top" aria-label="Retrogear.net, back to top">
           <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>
           <span>retrogear<span className="brand-dot">.</span>net</span>
         </a>
-        <nav className="header-nav" aria-label="Hoofdnavigatie">
-          <a href="#domein">Over het domein</a>
+        <nav className="header-nav" aria-label="Main navigation">
+          <a href="#domain">About the domain</a>
           <a href="https://jor-design.nl/" target="_blank" rel="noopener noreferrer">JOR-Design <ArrowIcon diagonal /></a>
         </nav>
       </header>
@@ -62,17 +62,17 @@ export default function Home() {
       <main id="top">
         <section className="hero wrap" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-line" /> Een naam met potentie</div>
-            <h1 id="hero-title">De volgende grote<br /><em>retro-ervaring</em><br />begint hier.</h1>
-            <p className="hero-lead">Een korte, herkenbare domeinnaam voor een webshop, community of project vol retro gear. <strong>Retrogear.net</strong> kan van jou zijn.</p>
+            <div className="eyebrow"><span className="eyebrow-line" /> A name with potential</div>
+            <h1 id="hero-title">The next big<br /><em>retro idea</em><br />starts here.</h1>
+            <p className="hero-lead">A short, memorable domain name for a store, community, or project built around retro gear. <strong>Retrogear.net</strong> could be yours.</p>
             <div className="hero-actions">
-              <button className="button button-primary" ref={buyButtonRef} onClick={() => setIsOpen(true)}>Koop dit domein <ArrowIcon /></button>
-              <a className="text-link" href="#domein">Ontdek de naam <span aria-hidden="true">↓</span></a>
+              <button className="button button-primary" ref={buyButtonRef} onClick={() => setIsOpen(true)}>Buy this domain <ArrowIcon /></button>
+              <a className="text-link" href="#domain">Explore the name <span aria-hidden="true">↓</span></a>
             </div>
-            <div className="hero-footnote"><span className="pulse-dot" /> Al onder bod · nieuwe voorstellen welkom</div>
+            <div className="hero-footnote"><span className="pulse-dot" /> Offer received · new offers welcome</div>
           </div>
 
-          <div className="hero-visual" aria-label="Retrogear.net domeinnaam, vraagprijs vierhonderd euro">
+          <div className="hero-visual" aria-label="Retrogear.net domain name, asking price four hundred euros">
             <div className="orbit orbit-one" /><div className="orbit orbit-two" />
             <div className="visual-spark spark-one">✦</div><div className="visual-spark spark-two">✦</div>
             <div className="domain-card">
@@ -80,35 +80,35 @@ export default function Home() {
               <div className="card-grid">
                 <div className="card-symbol" aria-hidden="true"><span className="symbol-diamond"><span /></span></div>
                 <div className="card-domain">retrogear<span>.net</span></div>
-                <div className="card-tagline">Een naam die blijft hangen.</div>
+                <div className="card-tagline">A name that sticks.</div>
               </div>
-              <div className="card-bottom"><span>VRAAGPRIJS</span><strong>€ 400<span>,–</span></strong></div>
+              <div className="card-bottom"><span>ASKING PRICE</span><strong>€ 400</strong></div>
             </div>
-            <div className="floating-label"><span className="label-icon">↗</span> Jouw idee begint met een naam</div>
+            <div className="floating-label"><span className="label-icon">↗</span> Your idea starts with a name</div>
           </div>
         </section>
 
-        <section className="ticker" aria-label="Domeinnaam"><div className="ticker-inner"><span>RETROGEAR.NET</span><i>✳</i><span>VAN IDEE NAAR ICONISCH</span><i>✳</i><span>RETROGEAR.NET</span><i>✳</i><span>VAN IDEE NAAR ICONISCH</span></div></section>
+        <section className="ticker" aria-label="Domain name"><div className="ticker-inner"><span>RETROGEAR.NET</span><i>✳</i><span>FROM IDEA TO ICONIC</span><i>✳</i><span>RETROGEAR.NET</span><i>✳</i><span>FROM IDEA TO ICONIC</span></div></section>
 
-        <section className="details wrap" id="domein" aria-labelledby="details-title">
-          <div className="section-label"><span>01</span> / OVER DE NAAM</div>
+        <section className="details wrap" id="domain" aria-labelledby="details-title">
+          <div className="section-label"><span>01</span> / ABOUT THE NAME</div>
           <div className="details-content">
-            <h2 id="details-title">Een goede naam is<br /><span>het halve werk.</span></h2>
-            <div className="details-aside"><p>Retrogear.net klinkt direct vertrouwd en geeft je ruimte om er jouw eigen verhaal van te maken. Van vintage technologie tot games en verzamelobjecten.</p><a href={offerLink}>Liever meteen een voorstel doen? <ArrowIcon diagonal /></a></div>
+            <h2 id="details-title">A great name is<br /><span>a great start.</span></h2>
+            <div className="details-aside"><p>Retrogear.net feels instantly familiar and leaves room to make it your own. Think vintage tech, games, collectibles, and more.</p><a href={offerLink}>Ready to make an offer? <ArrowIcon diagonal /></a></div>
           </div>
           <div className="value-grid">
-            <article className="value-item"><span className="value-number">01 /</span><h3>Kort & duidelijk</h3><p>Een naam die makkelijk te onthouden en te delen is.</p></article>
-            <article className="value-item"><span className="value-number">02 /</span><h3>Veel mogelijkheden</h3><p>Een sterke basis voor een winkel, platform of creatief project.</p></article>
-            <article className="value-item"><span className="value-number">03 /</span><h3>Direct starten</h3><p>De domeinnaam staat klaar voor jouw volgende idee.</p></article>
+            <article className="value-item"><span className="value-number">01 /</span><h3>Short & clear</h3><p>Easy to remember, easy to share.</p></article>
+            <article className="value-item"><span className="value-number">02 /</span><h3>Room to grow</h3><p>A strong foundation for a store, platform, or creative project.</p></article>
+            <article className="value-item"><span className="value-number">03 /</span><h3>Ready for your idea</h3><p>Make this domain the starting point for what comes next.</p></article>
           </div>
         </section>
 
-        <section className="contact-band" id="contact"><div className="wrap contact-inner"><div><div className="contact-kicker">ZIN OM IETS MOOIS TE BOUWEN?</div><h2>Maak de naam <em>van jou.</em></h2><p>Vraagprijs €400. Het domein is al onder bod; een nieuw voorstel kun je rechtstreeks mailen aan JOR-Design.</p></div><button className="button button-light" onClick={() => setIsOpen(true)}>Doe een voorstel <ArrowIcon /></button></div></section>
+        <section className="contact-band" id="contact"><div className="wrap contact-inner"><div><div className="contact-kicker">READY TO BUILD SOMETHING GREAT?</div><h2>Make this name <em>yours.</em></h2><p>Asking price: €400. The domain already has an offer, but you can send a new one directly to JOR-Design.</p></div><button className="button button-light" onClick={() => setIsOpen(true)}>Make an offer <ArrowIcon /></button></div></section>
       </main>
 
-      <footer className="site-footer wrap"><a className="footer-brand" href="#top">retrogear<span>.</span>net</a><p>Een domein aangeboden via <a href="https://jor-design.nl/" target="_blank" rel="noopener noreferrer">JOR-Design <ArrowIcon diagonal /></a></p><a href={`mailto:${email}`}>{email}</a></footer>
+      <footer className="site-footer wrap"><a className="footer-brand" href="#top">retrogear<span>.</span>net</a><p>A domain offered by <a href="https://jor-design.nl/" target="_blank" rel="noopener noreferrer">JOR-Design <ArrowIcon diagonal /></a></p><a href={`mailto:${email}`}>{email}</a></footer>
 
-      {isOpen && <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setIsOpen(false); }}><section className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description"><button className="modal-close" type="button" ref={closeButtonRef} onClick={() => setIsOpen(false)} aria-label="Sluiten">×</button><div className="modal-icon" aria-hidden="true">↗</div><span className="modal-kicker">RETROGEAR.NET</span><h2 id="modal-title">Dit domein is<br />al onder bod.</h2><p id="modal-description">We staan nog steeds open voor een goed voorstel. Mail jouw bod naar JOR-Design; we nemen zo snel mogelijk contact met je op.</p><div className="modal-price"><span>VRAAGPRIJS</span><strong>€400</strong></div><a className="button button-primary modal-action" href={offerLink}>Mail jouw bod <ArrowIcon /></a><a className="modal-email" href={`mailto:${email}`}>{email}</a></section></div>}
+      {isOpen && <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setIsOpen(false); }}><section className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description"><button className="modal-close" type="button" ref={closeButtonRef} onClick={() => setIsOpen(false)} aria-label="Close">×</button><div className="modal-icon" aria-hidden="true">↗</div><span className="modal-kicker">RETROGEAR.NET</span><h2 id="modal-title">This domain<br />already has an offer.</h2><p id="modal-description">We're still open to new offers. Email yours to JOR-Design and we'll get back to you as soon as possible.</p><div className="modal-price"><span>ASKING PRICE</span><strong>€400</strong></div><a className="button button-primary modal-action" href={offerLink}>Email your offer <ArrowIcon /></a><a className="modal-email" href={`mailto:${email}`}>{email}</a></section></div>}
     </div>
   );
 }

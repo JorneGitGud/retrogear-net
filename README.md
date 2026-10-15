@@ -1,21 +1,21 @@
 # Retrogear.net
 
-Next.js verkooppagina voor de domeinnaam Retrogear.net.
+Next.js sales page for the Retrogear.net domain name.
 
-## Lokaal starten
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open daarna `http://localhost:3000`.
+Then open `http://localhost:3000`.
 
-## Productiebuild
+## Production build
 
 ```bash
 npm run build
 npm run start
 ```
 
-De koopknop opent een venster met de status ‘onder bod’ en een `mailto:`-link naar `info@jor-design.nl`. Er wordt geen betaling verwerkt op de site.
+The buy button opens a dialog explaining that the domain already has an offer, with a `mailto:` link to `info@jor-design.nl`. No payments are processed on the site.
